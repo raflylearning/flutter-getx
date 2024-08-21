@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -27,7 +25,13 @@ class HomeView extends GetView<HomeController> {
               Get.toNamed('/counter');
             },
             child: Text('Pindah Ke Halaman Counter Page'),
-          )
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Get.toNamed('/biodata');
+            },
+            child: Text('Pindah Ke Halaman Biodata'),
+          ),
         ],
       ),
     );

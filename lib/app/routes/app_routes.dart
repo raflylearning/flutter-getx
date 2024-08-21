@@ -4,13 +4,18 @@ part of 'app_pages.dart';
 abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
-  static const CONTER = _Paths.CONTER;
   static const COUNTER = _Paths.COUNTER;
+  static const BIODATA = _Paths.BIODATA;
+  static const REGISTER = _Paths.REGISTER;
+  static const LOGIN = _Paths.LOGIN;
 }
 
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
-  static const CONTER = '/conter';
   static const COUNTER = '/counter';
+  static const BIODATA = '/biodata';
+  static const OUTPUT = '/output';
+  static const REGISTER = '/register';
+  static const LOGIN = '/login';
 }

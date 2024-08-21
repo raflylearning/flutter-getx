@@ -10,7 +10,7 @@ class CounterView extends GetView<CounterController> {
     CounterController c = Get.put(CounterController());
     return Scaffold(
       appBar: AppBar(
-        title: const Text('CounteView'),
+        title: const Text('CounterView'),
         centerTitle: true,
       ),
       body: Center(
