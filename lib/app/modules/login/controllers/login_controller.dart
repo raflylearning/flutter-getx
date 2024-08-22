@@ -27,7 +27,7 @@ class LoginController extends GetxController {
       final token = data['access_token'];
 
       box.write('access_token', token);
-      Get.offAllNamed('/home');
+      Get.offAllNamed('/bottom_menu');
     } else {
       Get.snackbar('Error', 'Login failed. Please check tour credentials',
           snackPosition: SnackPosition.BOTTOM);

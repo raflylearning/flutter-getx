@@ -20,18 +20,6 @@ class HomeView extends GetView<HomeController> {
               style: TextStyle(fontSize: 20),
             ),
           ),
-          ElevatedButton(
-            onPressed: () {
-              Get.toNamed('/counter');
-            },
-            child: Text('Pindah Ke Halaman Counter Page'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Get.toNamed('/biodata');
-            },
-            child: Text('Pindah Ke Halaman Biodata'),
-          ),
         ],
       ),
     );
