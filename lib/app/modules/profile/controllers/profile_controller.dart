@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
@@ -28,7 +28,9 @@ class ProfileController extends GetxController {
     final url = Uri.parse('${BaseUrl.api}/user/profile');
     final response = await http.get(
       url,
-      headers: {'Authorization': 'Bearer $token'},
+      headers: {
+        'Authorization': 'Bearer $token'
+      },
     );
 
     if (response.statusCode == 200) {
